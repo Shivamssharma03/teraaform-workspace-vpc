@@ -9,7 +9,7 @@ variable "instance_type" {
     default = "t3.micro" 
     }
 
-variable "subnet_ids" {
+variable "public_subnet_ids" {
      description = "name of the subnet id"
      type = list(string) 
      }
@@ -44,4 +44,19 @@ variable "vpc_id" {
     description = "id of the vpc"
     type = string
   
+}
+
+variable"private_subnet_ids"{
+    description = "private subnet id"
+    type= list(string)
+}
+
+variable "frontend_sg" {
+  description = "Security group ID for frontend EC2 instance"
+  type        = string
+}
+
+variable "backend_sg" {
+  description = "Security group ID for backend EC2 instance"
+  type        = string
 }

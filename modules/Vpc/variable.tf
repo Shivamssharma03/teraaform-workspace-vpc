@@ -16,3 +16,9 @@ variable "public_subnets" {
     type = map(string)
      }
 variable "tags" { type = map(string) }
+
+
+variable "private_subnets" { 
+    description = "subnet id"
+    type = map(string)
+     }
