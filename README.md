@@ -2,6 +2,7 @@ For creating workspace run cmd
 =
 Terraform workspace create dev,
 <button onclick="navigator.clipboard.writeText('Terraform workspace create dev')">Copy</button>
+Terraform workspace create dev,
 
 Terraform workspace create stage,
 
